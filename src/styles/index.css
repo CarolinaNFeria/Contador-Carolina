@@ -1,53 +1,47 @@
 body {
-  background-color: rgb(249, 201, 234);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: sans-serif;
-  margin: 0;
-}
-
-.app-container {
-  text-align: center;
-}
-
-.counter-wrapper {
-  margin-bottom: 30px;
-}
-
-
-.counter-display {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  margin: 10px 0;
-}
-
-.digit-box {
-  width: 150px;
-  height: 180px;
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 9rem;
-  font-weight: bold;
-  border-radius: 9px;
-}
-
-.reset-button {
-  padding: 12px 22px;
-  font-size: 3rem;
-  cursor: pointer;
-  background-color:rgb(231, 71, 191);
-  margin: 30px;
-}
-
-.title {
   margin: 50px;
-  height: 50px;
-  font-size: 3rem;
-  color: rgb(231, 71, 191);
+  background: #f6c4e6;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+.counter-container {
+  background: black;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+}
+
+.counter-box {
+  background: #20131b;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  width: 120px;
+  height: 17git status0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.icon {
+  font-size: 60px;
+}
+
+.reset-btn {
+  margin-left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: rgb(158, 105, 136);
+}
+
+.reset-btn:hover {
+  background: #ddd;
+}
+

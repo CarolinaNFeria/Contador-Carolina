@@ -1,22 +1,26 @@
 import React from "react";
 
 
-function SecondsCounter({ seconds, digits = 6 }) {
-  const paddedSeconds = String(seconds).padStart(digits, "0");
-  const digitArray = paddedSeconds.split("");
-
+const SecondsCounter = ({ seconds, onReset }) => {
+  const digits = seconds.toString().padStart(6, "0").split("");
+  
   return (
-    <div className="counter-wrapper">
-      <h1 className="title">Contador de Segundos</h1>
-      <div className="counter-display">
-        {digitArray.map((d, i) => (
-          <div key={i} className="digit-box">
-            {d}
-          </div>
-        ))}
+    <div className="counter-container">
+      <div className="counter-box icon">
+        ⏱
       </div>
+     {digits.map((digit, index) => (
+        <div key={index} className="counter-box">
+          {digit}
+        </div>
+      ))}
+
+      <button className="reset-btn" onClick={onReset}>
+        Reiniciar
+      </button>
+
     </div>
   );
-}
+};
 
 export default SecondsCounter;
